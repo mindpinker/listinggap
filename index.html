@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>ListingGap — Amazon listing audit and review-based rewrite</title>
+    <meta
+      name="description"
+      content="ListingGap is a free, local Chrome side panel that finds the buyer objections your Amazon listing never answers and rewrites the title and bullets with evidence."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./">
+        <img src="icon128.png" alt="" />
+        <span>ListingGap</span>
+      </a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#support">Support</a>
+        <a class="button small" href="privacy.html">Privacy policy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free · local · no account</p>
+          <h1>Find the buyer objections your Amazon listing never answers.</h1>
+          <p class="lead">
+            ListingGap reads the reviews a buyer already sees, clusters the recurring complaints, checks whether your
+            title and bullets answer them, and writes a paste-ready rewrite — without uploading your listing or
+            inventing facts.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="privacy.html">Read the privacy policy</a>
+            <a class="text-link" href="#how">See how the audit works →</a>
+          </div>
+          <p class="fineprint">
+            Chrome side panel. Manifest V3. No backend, analytics, account, API key, or paywall.
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="card-top">
+            <span class="status-dot"></span>
+            <span>Example audit</span>
+            <span class="score">33/100</span>
+          </div>
+          <h2>The page is working against the product.</h2>
+          <p class="quote">“The clasp popped off the first time I wore them.”</p>
+          <div class="bars">
+            <div><span>Objection coverage</span><strong>16</strong></div>
+            <div class="bar"><i style="width:16%"></i></div>
+            <div><span>Proof / claim safety</span><strong>64</strong></div>
+            <div class="bar"><i class="amber" style="width:64%"></i></div>
+            <div><span>Clarity and structure</span><strong>40</strong></div>
+            <div class="bar"><i class="blue" style="width:40%"></i></div>
+          </div>
+          <div class="card-note">8 objections · 2 proof gaps · 16 reviews read</div>
+        </div>
+      </section>
+
+      <section id="how" class="section">
+        <p class="eyebrow">One job, done deeply</p>
+        <h2>From buyer language to listing copy.</h2>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Read the evidence</h3>
+            <p>Current-page reviews, 1–3 star review pages, Amazon’s “Customers say” summary, and a manual paste/CSV fallback.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Map the gaps</h3>
+            <p>45 objection aspects with negation-aware matching. Every gap shows what buyers say and what your copy says.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Write the page</h3>
+            <p>A title within the marketplace limit, five bullets, an A+ outline, and quick wins — each tied to evidence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Why it stays free</p>
+          <h2>The analysis engine ships with the extension.</h2>
+          <p>
+            There is no server to pay for, no AI API to meter, and no account to manage. That means no credits, no
+            trial, no license key, and no paywall. The trade-off is deliberately narrow scope: ListingGap does not
+            estimate sales, pull keyword volume, automate PPC, or generate images.
+          </p>
+        </div>
+        <div class="checks">
+          <div><strong>No data upload</strong><span>Review-page requests go only to the Amazon domain you are already visiting.</span></div>
+          <div><strong>No remote code</strong><span>Every line of analysis code is packaged with the extension.</span></div>
+          <div><strong>No invented facts</strong><span>Missing materials, tests, and certifications are marked as needing input.</span></div>
+          <div><strong>No lock-in</strong><span>Copy blocks, export Markdown or CSV, and clear local history at any time.</span></div>
+        </div>
+      </section>
+
+      <section id="privacy" class="section privacy-band">
+        <p class="eyebrow">Privacy</p>
+        <h2>Your listing stays in your browser.</h2>
+        <p>
+          ListingGap has no backend, analytics, telemetry, advertising, account, or remote AI. Listing and review
+          text is processed in the side panel. Up to 20 audits and your settings are stored with
+          <code>chrome.storage.local</code> on your device.
+        </p>
+        <a class="text-link" href="privacy.html">Read the full privacy policy →</a>
+      </section>
+
+      <section id="support" class="section split">
+        <div>
+          <p class="eyebrow">Support</p>
+          <h2>Something not extracting?</h2>
+          <p>
+            Amazon changes its pages often. If a listing does not extract, refresh the product page and try again.
+            If Amazon hides low-star review bodies, use the paste/CSV fallback. For bugs, feature requests, or privacy
+            questions, open an issue.
+          </p>
+          <a class="button" href="https://github.com/mindpinker/listinggap/issues" rel="noreferrer">Open a support issue</a>
+        </div>
+        <div class="support-card">
+          <strong>Before publishing a rewrite</strong>
+          <p>Verify every material, certification, test result, and warranty claim. ListingGap is a hypothesis generator, not a guarantee of sales, ranking, or compliance.</p>
+          <strong>Not affiliated with Amazon</strong>
+          <p>Amazon is a trademark of Amazon.com, Inc. or its affiliates. ListingGap is an independent tool.</p>
+          <p class="version">Version 1.0.0</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>ListingGap · free and local</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="https://github.com/mindpinker/listinggap/issues">Support</a></span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Privacy policy — ListingGap</title>
+    <meta name="description" content="ListingGap privacy policy: no backend, no analytics, no account, and no remote AI." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="privacy-doc">
+    <header class="site-header">
+      <a class="brand" href="./">
+        <img src="icon128.png" alt="" />
+        <span>ListingGap</span>
+      </a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="https://github.com/mindpinker/listinggap/issues">Support</a>
+      </nav>
+    </header>
+
+    <main class="privacy-shell">
+      <p class="eyebrow">Privacy policy · Effective November 6, 2026</p>
+      <h1>Your listing stays in your browser.</h1>
+      <p class="lead">
+        ListingGap is a free, local-only Chrome extension. It has no account, no backend, no analytics, and no remote
+        AI service. The listing and review text you audit is processed on your device.
+      </p>
+
+      <div class="privacy-summary">
+        <div><strong>No collection</strong><p>We do not collect, transmit, sell, or share personal data.</p></div>
+        <div><strong>No account</strong><p>There is nothing to sign up for and no license key to install.</p></div>
+        <div><strong>No remote AI</strong><p>Every audit is computed by code shipped inside the extension.</p></div>
+        <div><strong>You stay in control</strong><p>Clear saved audits at any time, or remove everything by uninstalling.</p></div>
+      </div>
+
+      <section>
+        <h2>What the extension reads</h2>
+        <p>
+          When you click <strong>Audit</strong> on an Amazon product page, ListingGap reads the page you already have
+          open. That includes the title, bullets, description, price, rating, review count, image count, A+ presence,
+          Q&amp;A count, Amazon’s “Customers say” summary, and any visible review text.
+        </p>
+        <p>
+          To find complaints that Amazon does not show on the product page, the extension may request review pages for
+          the same ASIN directly from Amazon. Those requests go to Amazon, using your existing browser session, not to a
+          ListingGap server. ListingGap does not operate a server.
+        </p>
+      </section>
+
+      <section>
+        <h2>What is stored</h2>
+        <p>
+          Up to 20 recent audits, your settings, and any reviews you paste or import are stored with
+          <code>chrome.storage.local</code> on this device. They are not synced to your Google account and are not sent
+          to us. Use <strong>Clear local history</strong> in Settings to delete saved audits. Uninstalling the extension
+          removes its local storage.
+        </p>
+        <div class="privacy-table-wrap">
+          <table>
+            <thead><tr><th>Data</th><th>Where it goes</th></tr></thead>
+            <tbody>
+              <tr><td>Listing text and review text</td><td>Processed in the side panel on your device</td></tr>
+              <tr><td>Saved audits and settings</td><td><code>chrome.storage.local</code> on your device</td></tr>
+              <tr><td>Review-page requests</td><td>Amazon only, for the ASIN you are auditing</td></tr>
+              <tr><td>Analytics, telemetry, advertising IDs</td><td>Not collected or used</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Permissions</h2>
+        <ul>
+          <li><strong>Amazon host access</strong> — read a product page and fetch review pages for the ASIN you are auditing.</li>
+          <li><strong><code>activeTab</code></strong> — read the listing only after you actively audit it.</li>
+          <li><strong><code>storage</code></strong> — keep settings and up to 20 audits locally.</li>
+          <li><strong><code>sidePanel</code></strong> — display the report beside the Amazon page.</li>
+        </ul>
+        <p>
+          The manifest requests access only to Amazon marketplace domains. It does not request access to all websites,
+          your tabs, or your browsing history.
+        </p>
+      </section>
+
+      <section>
+        <h2>Clipboard and third-party tools</h2>
+        <p>
+          Copy buttons write text to your clipboard only when you click them. The optional <strong>Copy AI prompt</strong>
+          button prepares a prompt locally; ListingGap never sends it anywhere. If you paste that prompt into ChatGPT,
+          Claude, or another service, that service’s privacy policy and terms apply.
+        </p>
+      </section>
+
+      <section>
+        <h2>No remote code, no tracking</h2>
+        <p>
+          All analysis code is included in the extension package. ListingGap does not load remote scripts, inject
+          advertising, use analytics SDKs, or build a profile of you. It does not use cookies for tracking.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes and contact</h2>
+        <p>
+          If this policy changes, the effective date above will be updated. Questions about privacy can be sent through
+          the <strong>Support</strong> tab of the Chrome Web Store listing or through
+          <a href="https://github.com/mindpinker/listinggap/issues">GitHub Issues</a>.
+        </p>
+        <p class="privacy-note">
+          ListingGap is an independent tool. It is not affiliated with, endorsed by, or sponsored by Amazon. Verify every
+          rewritten claim before publishing it.
+        </p>
+      </section>
+
+      <footer class="doc-footer">
+        <span>ListingGap · free and local</span>
+        <span>Version 1.0.0</span>
+      </footer>
+    </main>
+  </body>
+</html>
