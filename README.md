@@ -4,7 +4,8 @@
 
 ListingGap is a Manifest V3 Chrome side-panel extension for Amazon sellers. It reads the product page and the reviews a buyer would see, clusters recurring objections, checks whether the listing copy answers them, and produces a paste-ready rewrite.
 
-The name is provisional. Run a Chrome Web Store name search and a trademark search before publishing.
+The name passed a Chrome Web Store screen on 2026-11-12; registry clearance is still open
+(see `docs/trademark-check.md`).
 
 ## Chrome Web Store status
 
@@ -12,7 +13,10 @@ Published on 2026-11-06; re-verified in the developer dashboard on 2026-11-12.
 
 - Item ID: `jdmmcbmgmhhjcblaefgmofllhaodafkg`
 - Status: **Published — public** (已发布 - 公开发布)
-- Version: `1.0.1` (feedback entry + post-success review prompt; 1.0.0 was the first public release)
+- Version: `1.0.1` submitted for review on 2026-11-12 (feedback entry, sign-in detection,
+  post-success review prompt). `1.0.2` is packaged and ready to submit after 1.0.1 is
+  approved (adds a diagnostic when a review page parses to zero rows). `1.0.0` is the live
+  public build.
 - Current users: 2
 - Ratings: none yet
 - Auto-publish on approval: enabled
