@@ -1,0 +1,96 @@
+name: Extraction or audit bug
+description: A listing did not extract correctly, or the audit/rewrite output was wrong.
+title: "[Bug] "
+labels: ["bug", "extraction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing ListingGap. Please do **not** paste private seller data, customer names, or
+        anything you are not allowed to share. An ASIN and the stage that failed is usually enough.
+
+        ListingGap never uploads your listing. This issue is public, so redact anything sensitive.
+  - type: input
+    id: asin
+    attributes:
+      label: ASIN
+      description: The 10-character Amazon ASIN, for example B08N5WRWNW.
+      placeholder: B08N5WRWNW
+    validations:
+      required: true
+  - type: dropdown
+    id: marketplace
+    attributes:
+      label: Marketplace
+      options:
+        - amazon.com
+        - amazon.ca
+        - amazon.com.mx
+        - amazon.com.br
+        - amazon.co.uk
+        - amazon.de
+        - amazon.fr
+        - amazon.it
+        - amazon.es
+        - amazon.nl
+        - amazon.se
+        - amazon.pl
+        - amazon.com.be
+        - amazon.com.au
+        - amazon.co.jp
+        - amazon.in
+        - amazon.sg
+        - amazon.ae
+        - amazon.sa
+        - amazon.com.tr
+        - amazon.eg
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Product category
+      description: Best guess is fine, for example Home & Kitchen, Pet Supplies, Jewelry.
+      placeholder: Home & Kitchen
+    validations:
+      required: false
+  - type: checkboxes
+    id: failed_stage
+    attributes:
+      label: What failed?
+      description: Select every stage that looked wrong.
+      options:
+        - label: Title
+        - label: Item Highlights
+        - label: Bullets / five points
+        - label: Description or A+ detection
+        - label: Reviews (missing, wrong rating, or blocked)
+        - label: Amazon "Customers say" summary
+        - label: Proof gap / claim detection
+        - label: Rewrite output
+        - label: Copy or export
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+      description: One or two sentences. Include the text ListingGap showed if it was wrong.
+      placeholder: The title extracted, but the bullets came back empty even though the page has five bullets.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Chrome version and OS
+      placeholder: Chrome 142 on Windows 11
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag an image here. Crop out names, order IDs, and anything private.
+    validations:
+      required: false
